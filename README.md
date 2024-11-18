@@ -11,7 +11,7 @@ Program ini bertujuan untuk mengelola data nilai mahasiswa. Program memungkinkan
 
 ---
 
-## Program Membuat Data Nilai Mahasiswa
+## Program Manajemen Data Nilai Mahasiswa
 
 ### Deskripsi Program:
 Program ini memungkinkan pengguna untuk mengelola data nilai mahasiswa dengan cara memasukkan, mengubah, menghapus, mencari, dan menampilkan informasi terkait nilai Tugas, UTS, UAS, dan Nilai Akhir. Data disimpan dalam bentuk dictionary yang menggunakan NIM mahasiswa sebagai kunci, dan setiap entri berisi nama mahasiswa, nilai-nilai akademik, serta perhitungan Nilai Akhir.
@@ -109,18 +109,9 @@ while True:
 
 ### Penjelasan Program:
 1. Program dimulai dengan inisialisasi dictionary `data_nilai` untuk menyimpan data mahasiswa berdasarkan NIM. Setiap NIM menjadi kunci dan nilai yang terkait adalah dictionary yang berisi nama mahasiswa, nilai tugas, UTS, UAS, dan nilai akhir.
-2. Program memasuki loop utama yang menampilkan menu untuk pengguna dengan beberapa pilihan aksi:
-
-(L)ihat: Menampilkan seluruh data mahasiswa.
-(T)ambah: Menambah data mahasiswa baru.
-(U)bah: Mengubah data mahasiswa yang sudah ada.
-(H)apus: Menghapus data mahasiswa.
-(C)ari: Mencari data mahasiswa berdasarkan NIM.
-(K)eluar: Keluar dari program.
+2. Program memasuki loop utama yang menampilkan menu untuk pengguna dengan beberapa pilihan aksi: 1.(L)ihat: Menampilkan seluruh data mahasiswa, 2.(T)ambah: Menambah data mahasiswa baru, 3.(U)bah: Mengubah data mahasiswa yang sudah ada, 4.(H)apus: Menghapus data mahasiswa, 5.(C)ari: Mencari data mahasiswa berdasarkan NIM, 6.(K)eluar: Keluar dari program.
 3. Jika pengguna memilih (T)ambah, program akan meminta input untuk NIM, nama, nilai tugas, nilai UTS, dan nilai UAS.
-4. Setelah semua input diterima, program akan menghitung nilai akhir mahasiswa dengan rumus:
-
-Nilai Akhir = (Nilai Tugas * 0.30) + (Nilai UTS * 0.35) + (Nilai UAS * 0.35).
+4. Setelah semua input diterima, program akan menghitung nilai akhir mahasiswa dengan rumus: Nilai Akhir = (Nilai Tugas * 0.30) + (Nilai UTS * 0.35) + (Nilai UAS * 0.35).
 5. Data mahasiswa yang terdiri dari NIM, nama, nilai tugas, nilai UTS, nilai UAS, dan nilai akhir disimpan dalam dictionary `data_nilai`, dengan NIM sebagai kunci.
 6. Jika pengguna memilih (U)bah, program akan meminta NIM mahasiswa yang datanya ingin diubah. Jika NIM ditemukan, pengguna dapat mengubah nama, nilai tugas, nilai UTS, dan nilai UAS. Program kemudian menghitung ulang nilai akhir dan memperbarui data mahasiswa dalam dictionary.
 7. Jika pengguna memilih (H)apus, program akan meminta NIM mahasiswa yang ingin dihapus. Jika NIM ditemukan dalam dictionary, data mahasiswa tersebut akan dihapus.
